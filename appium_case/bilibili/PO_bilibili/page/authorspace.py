@@ -23,5 +23,5 @@ class AuthorSpace(BasePage):
         return self
 
     def click_on_video(self):
-        self._driver.find_element(AppiumBy.XPATH, "(//*[@resource-id='tv.danmaku.bili:id/title'])[2]").click()
+        self.find(AppiumBy.XPATH, "(//*[@resource-id='tv.danmaku.bili:id/title'])[2]").click()
         return VideoDetails(self._driver)

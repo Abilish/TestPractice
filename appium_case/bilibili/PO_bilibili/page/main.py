@@ -7,7 +7,7 @@ from appium_case.bilibili.PO_bilibili.page.search_page import SearchPage
 class Main(BasePage):
     def goto_searchpage(self):
         '''“搜索”页面'''
-        self._driver.find_element(AppiumBy.ID, 'tv.danmaku.bili:id/expand_search').click()
+        self.find(AppiumBy.ID, 'tv.danmaku.bili:id/expand_search').click()
         return SearchPage(self._driver)
 
     def goto_dynamic(self):
