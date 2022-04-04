@@ -24,8 +24,11 @@ class App(BasePage):
             # self.driver.start_activity(app_package= , app_activity= )
             # start该方法也能启动，但需要提供包名等，lunch会自动搜索已存在的app_package和app_activity
 
-        self._driver.implicitly_wait(10)
+        self._driver.implicitly_wait(6)
         return self
+
+    def teardown(self):
+        self._driver.quit()
 
     def restart(self):
         pass

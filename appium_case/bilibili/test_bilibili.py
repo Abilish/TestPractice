@@ -10,7 +10,7 @@ class TestBiliBili:
         desired_caps = {
             "platformName": 'Android',
             "platformVerdion": '5.1.1',
-            "deviceName": '192.xxx.x.xxx:5555',
+            "deviceName": '192.168.0.101:5555',
             "appPackage": 'tv.danmaku.bili',
             "appActivity": '.MainActivityV2',
             "noReset": True,

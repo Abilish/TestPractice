@@ -44,6 +44,7 @@ class BasePage:
                     return self.find(locator, value)  # 自己调用自己通过设置次数来避免死循环
             raise e
 
+
     def find_and_get_text(self, locator, value: str = None):  # 元素找到之后，点击之前出现弹框的处理办法
         element_text: WebElement
         # 弹框处理，如果找到了元素就返回，否则找到弹框就捕获异常

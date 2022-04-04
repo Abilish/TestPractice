@@ -32,11 +32,12 @@ class VideoDetails(BasePage):
         return self.find(AppiumBy.XPATH, "//*[@class='android.widget.Toast']").text
         # return 'toast'
 
-    def comments(self):
+    def comments(self, comment):
         '''评论视频'''
         self.find(AppiumBy.ID, "tv.danmaku.bili:id/tab_sub_title").click()
         self.find(AppiumBy.ID, "tv.danmaku.bili:id/input").click()
-        self.find(AppiumBy.ID, "tv.danmaku.bili:id/edit").send_keys('举头望明月，低头两片瓦')
+        # self.find(AppiumBy.ID, "tv.danmaku.bili:id/edit").send_keys('举头望明月，低头两片瓦')
+        self.find(AppiumBy.ID, "tv.danmaku.bili:id/edit").send_keys(f'{comment}')
         self.find(AppiumBy.ACCESSIBILITY_ID, '发布，按钮').click()
         return self
 
