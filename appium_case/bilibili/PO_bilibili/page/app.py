@@ -27,9 +27,6 @@ class App(BasePage):
         self._driver.implicitly_wait(6)
         return self
 
-    def teardown(self):
-        self._driver.quit()
-
     def restart(self):
         pass
 
