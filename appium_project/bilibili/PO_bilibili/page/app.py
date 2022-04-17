@@ -1,7 +1,7 @@
 from appium import webdriver
 
-from appium_case.bilibili.PO_bilibili.page.base_page import BasePage
-from appium_case.bilibili.PO_bilibili.page.main import Main
+from appium_project.bilibili.PO_bilibili.page.base_page import BasePage
+from appium_project.bilibili.PO_bilibili.page.main import Main
 
 
 class App(BasePage):

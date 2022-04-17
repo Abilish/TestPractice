@@ -3,7 +3,7 @@ from time import sleep
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
 
-from appium_case.bilibili.PO_bilibili.page.base_page import BasePage
+from appium_project.bilibili.PO_bilibili.page.base_page import BasePage
 
 
 class VideoDetails(BasePage):
@@ -31,6 +31,7 @@ class VideoDetails(BasePage):
         '''toast验证一键三连是否成功'''
         return self.find(AppiumBy.XPATH, "//*[@class='android.widget.Toast']").text
         # return 'toast'
+
 
     def comments_v(self, comment):
         '''评论视频'''

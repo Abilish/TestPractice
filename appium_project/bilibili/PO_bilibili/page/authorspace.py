@@ -3,8 +3,8 @@ from time import sleep
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
 
-from appium_case.bilibili.PO_bilibili.page.base_page import BasePage
-from appium_case.bilibili.PO_bilibili.page.videodetails import VideoDetails
+from appium_project.bilibili.PO_bilibili.page.base_page import BasePage
+from appium_project.bilibili.PO_bilibili.page.videodetails import VideoDetails
 
 
 class AuthorSpace(BasePage):
